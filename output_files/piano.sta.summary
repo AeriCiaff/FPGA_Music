@@ -1,0 +1,245 @@
+------------------------------------------------------------
+Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1200mV 85C Model Setup 'inst|altpll_component|auto_generated|pll1|clk[0]'
+Slack : -9.188
+TNS   : -98.194
+
+Type  : Slow 1200mV 85C Model Setup 'FDIV:inst9|FULL'
+Slack : -1.590
+TNS   : -9.979
+
+Type  : Slow 1200mV 85C Model Setup 'debounce:inst14|clean_key'
+Slack : -0.685
+TNS   : -0.685
+
+Type  : Slow 1200mV 85C Model Setup 'SPKER:inst5|SPKS'
+Slack : 0.261
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Setup 'inst|altpll_component|auto_generated|pll1|clk[1]'
+Slack : 499995.499
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'inst|altpll_component|auto_generated|pll1|clk[0]'
+Slack : -0.576
+TNS   : -0.576
+
+Type  : Slow 1200mV 85C Model Hold 'inst|altpll_component|auto_generated|pll1|clk[1]'
+Slack : 0.378
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'debounce:inst14|clean_key'
+Slack : 0.379
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'SPKER:inst5|SPKS'
+Slack : 0.412
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'FDIV:inst9|FULL'
+Slack : 0.498
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Recovery 'FDIV:inst9|FULL'
+Slack : -2.695
+TNS   : -21.560
+
+Type  : Slow 1200mV 85C Model Recovery 'inst|altpll_component|auto_generated|pll1|clk[1]'
+Slack : 499994.950
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Removal 'FDIV:inst9|FULL'
+Slack : 0.868
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Removal 'inst|altpll_component|auto_generated|pll1|clk[1]'
+Slack : 1.748
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'FDIV:inst9|FULL'
+Slack : -1.487
+TNS   : -11.896
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'debounce:inst14|clean_key'
+Slack : -1.487
+TNS   : -2.974
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'SPKER:inst5|SPKS'
+Slack : -1.487
+TNS   : -1.487
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'CLK'
+Slack : 41.595
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'inst|altpll_component|auto_generated|pll1|clk[0]'
+Slack : 499.708
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'inst|altpll_component|auto_generated|pll1|clk[1]'
+Slack : 249998.730
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Setup 'inst|altpll_component|auto_generated|pll1|clk[0]'
+Slack : -8.488
+TNS   : -90.538
+
+Type  : Slow 1200mV 0C Model Setup 'FDIV:inst9|FULL'
+Slack : -1.335
+TNS   : -8.274
+
+Type  : Slow 1200mV 0C Model Setup 'debounce:inst14|clean_key'
+Slack : -0.602
+TNS   : -0.602
+
+Type  : Slow 1200mV 0C Model Setup 'SPKER:inst5|SPKS'
+Slack : 0.334
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Setup 'inst|altpll_component|auto_generated|pll1|clk[1]'
+Slack : 499995.740
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'inst|altpll_component|auto_generated|pll1|clk[0]'
+Slack : -0.594
+TNS   : -0.594
+
+Type  : Slow 1200mV 0C Model Hold 'inst|altpll_component|auto_generated|pll1|clk[1]'
+Slack : 0.338
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'debounce:inst14|clean_key'
+Slack : 0.339
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'SPKER:inst5|SPKS'
+Slack : 0.368
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'FDIV:inst9|FULL'
+Slack : 0.467
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Recovery 'FDIV:inst9|FULL'
+Slack : -2.519
+TNS   : -20.152
+
+Type  : Slow 1200mV 0C Model Recovery 'inst|altpll_component|auto_generated|pll1|clk[1]'
+Slack : 499995.224
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Removal 'FDIV:inst9|FULL'
+Slack : 0.845
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Removal 'inst|altpll_component|auto_generated|pll1|clk[1]'
+Slack : 1.607
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'FDIV:inst9|FULL'
+Slack : -1.487
+TNS   : -11.896
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'debounce:inst14|clean_key'
+Slack : -1.487
+TNS   : -2.974
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'SPKER:inst5|SPKS'
+Slack : -1.487
+TNS   : -1.487
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'CLK'
+Slack : 41.604
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'inst|altpll_component|auto_generated|pll1|clk[0]'
+Slack : 499.692
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'inst|altpll_component|auto_generated|pll1|clk[1]'
+Slack : 249998.736
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'inst|altpll_component|auto_generated|pll1|clk[0]'
+Slack : -3.283
+TNS   : -35.078
+
+Type  : Fast 1200mV 0C Model Setup 'FDIV:inst9|FULL'
+Slack : -0.014
+TNS   : -0.014
+
+Type  : Fast 1200mV 0C Model Setup 'debounce:inst14|clean_key'
+Slack : 0.269
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'SPKER:inst5|SPKS'
+Slack : 0.694
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'inst|altpll_component|auto_generated|pll1|clk[1]'
+Slack : 499997.043
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'inst|altpll_component|auto_generated|pll1|clk[0]'
+Slack : -0.309
+TNS   : -0.309
+
+Type  : Fast 1200mV 0C Model Hold 'debounce:inst14|clean_key'
+Slack : 0.155
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'inst|altpll_component|auto_generated|pll1|clk[1]'
+Slack : 0.155
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'SPKER:inst5|SPKS'
+Slack : 0.170
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'FDIV:inst9|FULL'
+Slack : 0.179
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Recovery 'FDIV:inst9|FULL'
+Slack : -0.560
+TNS   : -4.480
+
+Type  : Fast 1200mV 0C Model Recovery 'inst|altpll_component|auto_generated|pll1|clk[1]'
+Slack : 499996.725
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Removal 'FDIV:inst9|FULL'
+Slack : 0.194
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Removal 'inst|altpll_component|auto_generated|pll1|clk[1]'
+Slack : 0.702
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'FDIV:inst9|FULL'
+Slack : -1.000
+TNS   : -8.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'debounce:inst14|clean_key'
+Slack : -1.000
+TNS   : -2.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'SPKER:inst5|SPKS'
+Slack : -1.000
+TNS   : -1.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'CLK'
+Slack : 41.318
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'inst|altpll_component|auto_generated|pll1|clk[0]'
+Slack : 499.757
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'inst|altpll_component|auto_generated|pll1|clk[1]'
+Slack : 249998.784
+TNS   : 0.000
+
+------------------------------------------------------------

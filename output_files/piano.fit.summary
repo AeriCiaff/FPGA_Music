@@ -1,0 +1,18 @@
+Fitter Status : Successful - Sun Apr 28 11:11:07 2024
+Quartus Prime Version : 18.1.0 Build 625 09/12/2018 SJ Lite Edition
+Revision Name : piano
+Top-level Entity Name : piano
+Family : MAX 10
+Device : 10M08SAM153C8G
+Timing Models : Final
+Total logic elements : 291 / 8,064 ( 4 % )
+    Total combinational functions : 284 / 8,064 ( 4 % )
+    Dedicated logic registers : 54 / 8,064 ( < 1 % )
+Total registers : 54
+Total pins : 12 / 112 ( 11 % )
+Total virtual pins : 0
+Total memory bits : 0 / 387,072 ( 0 % )
+Embedded Multiplier 9-bit elements : 0 / 48 ( 0 % )
+Total PLLs : 1 / 1 ( 100 % )
+UFM blocks : 0 / 1 ( 0 % )
+ADC blocks : 0 / 1 ( 0 % )

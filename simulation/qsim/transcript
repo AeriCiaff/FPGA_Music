@@ -1,0 +1,20 @@
+# do piano.do
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 21:05:07 on Apr 20,2024
+# vlog -work work piano.vo 
+# -- Compiling module piano
+# 
+# Top level modules:
+# 	piano
+# End time: 21:05:08 on Apr 20,2024, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 21:05:08 on Apr 20,2024
+# vlog -work work Waveform.vwf.vt 
+# -- Compiling module piano_vlg_vec_tst
+# 
+# Top level modules:
+# 	piano_vlg_vec_tst
+# End time: 21:05:08 on Apr 20,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# after#1

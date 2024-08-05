@@ -1,0 +1,345 @@
+|piano
+pin_beep <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+CLK => clock:inst.inclk0
+select => select:inst12.select
+key => debounce:inst14.noisy_key
+col[0] => mat_key:inst13.col[0]
+col[1] => mat_key:inst13.col[1]
+col[2] => mat_key:inst13.col[2]
+col[3] => mat_key:inst13.col[3]
+row[0] <= mat_key:inst13.row[0]
+row[1] <= mat_key:inst13.row[1]
+row[2] <= mat_key:inst13.row[2]
+row[3] <= mat_key:inst13.row[3]
+
+
+|piano|SPKER:inst5
+CLK => SPKS~reg0.CLK
+CLK => CNT11[0].CLK
+CLK => CNT11[1].CLK
+CLK => CNT11[2].CLK
+CLK => CNT11[3].CLK
+CLK => CNT11[4].CLK
+CLK => CNT11[5].CLK
+CLK => CNT11[6].CLK
+CLK => CNT11[7].CLK
+CLK => CNT11[8].CLK
+CLK => CNT11[9].CLK
+CLK => CNT11[10].CLK
+TN[0] => CNT11.DATAB
+TN[1] => CNT11.DATAB
+TN[2] => CNT11.DATAB
+TN[3] => CNT11.DATAB
+TN[4] => CNT11.DATAB
+TN[5] => CNT11.DATAB
+TN[6] => CNT11.DATAB
+TN[7] => CNT11.DATAB
+TN[8] => CNT11.DATAB
+TN[9] => CNT11.DATAB
+TN[10] => CNT11.DATAB
+SPKS <= SPKS~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|piano|clock:inst
+inclk0 => sub_wire1[0].IN1
+c0 <= altpll:altpll_component.clk
+c1 <= altpll:altpll_component.clk
+
+
+|piano|clock:inst|altpll:altpll_component
+inclk[0] => clock_altpll:auto_generated.inclk[0]
+inclk[1] => clock_altpll:auto_generated.inclk[1]
+fbin => ~NO_FANOUT~
+pllena => ~NO_FANOUT~
+clkswitch => ~NO_FANOUT~
+areset => ~NO_FANOUT~
+pfdena => ~NO_FANOUT~
+clkena[0] => ~NO_FANOUT~
+clkena[1] => ~NO_FANOUT~
+clkena[2] => ~NO_FANOUT~
+clkena[3] => ~NO_FANOUT~
+clkena[4] => ~NO_FANOUT~
+clkena[5] => ~NO_FANOUT~
+extclkena[0] => ~NO_FANOUT~
+extclkena[1] => ~NO_FANOUT~
+extclkena[2] => ~NO_FANOUT~
+extclkena[3] => ~NO_FANOUT~
+scanclk => ~NO_FANOUT~
+scanclkena => ~NO_FANOUT~
+scanaclr => ~NO_FANOUT~
+scanread => ~NO_FANOUT~
+scanwrite => ~NO_FANOUT~
+scandata => ~NO_FANOUT~
+phasecounterselect[0] => ~NO_FANOUT~
+phasecounterselect[1] => ~NO_FANOUT~
+phasecounterselect[2] => ~NO_FANOUT~
+phasecounterselect[3] => ~NO_FANOUT~
+phaseupdown => ~NO_FANOUT~
+phasestep => ~NO_FANOUT~
+configupdate => ~NO_FANOUT~
+fbmimicbidir <> <GND>
+clk[0] <= clk[0].DB_MAX_OUTPUT_PORT_TYPE
+clk[1] <= clk[1].DB_MAX_OUTPUT_PORT_TYPE
+clk[2] <= clk[2].DB_MAX_OUTPUT_PORT_TYPE
+clk[3] <= clk[3].DB_MAX_OUTPUT_PORT_TYPE
+clk[4] <= clk[4].DB_MAX_OUTPUT_PORT_TYPE
+extclk[0] <= <GND>
+extclk[1] <= <GND>
+extclk[2] <= <GND>
+extclk[3] <= <GND>
+clkbad[0] <= <GND>
+clkbad[1] <= <GND>
+enable1 <= <GND>
+enable0 <= <GND>
+activeclock <= <GND>
+clkloss <= <GND>
+locked <= <GND>
+scandataout <= <GND>
+scandone <= <GND>
+sclkout0 <= <GND>
+sclkout1 <= <GND>
+phasedone <= <GND>
+vcooverrange <= <GND>
+vcounderrange <= <GND>
+fbout <= <GND>
+fref <= <GND>
+icdrclk <= <GND>
+
+
+|piano|clock:inst|altpll:altpll_component|clock_altpll:auto_generated
+clk[0] <= pll1.CLK
+clk[1] <= pll1.CLK1
+clk[2] <= pll1.CLK2
+clk[3] <= pll1.CLK3
+clk[4] <= pll1.CLK4
+inclk[0] => pll1.CLK
+inclk[1] => pll1.CLK1
+
+
+|piano|F_CODE:inst4
+INX[0] => Decoder0.IN3
+INX[0] => Decoder1.IN2
+INX[1] => Decoder0.IN2
+INX[1] => Decoder1.IN1
+INX[2] => Decoder0.IN1
+INX[3] => Decoder0.IN0
+INX[3] => Decoder1.IN0
+CODE[0] <= WideOr11.DB_MAX_OUTPUT_PORT_TYPE
+CODE[1] <= WideOr10.DB_MAX_OUTPUT_PORT_TYPE
+CODE[2] <= WideOr9.DB_MAX_OUTPUT_PORT_TYPE
+CODE[3] <= <GND>
+H <= WideOr12.DB_MAX_OUTPUT_PORT_TYPE
+TO[0] <= WideOr8.DB_MAX_OUTPUT_PORT_TYPE
+TO[1] <= WideOr7.DB_MAX_OUTPUT_PORT_TYPE
+TO[2] <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
+TO[3] <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+TO[4] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+TO[5] <= TO.DB_MAX_OUTPUT_PORT_TYPE
+TO[6] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+TO[7] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+TO[8] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+TO[9] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+TO[10] <= TO.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|piano|select:inst12
+A[0] => Q.DATAB
+A[1] => Q.DATAB
+A[2] => Q.DATAB
+A[3] => Q.DATAB
+B[0] => Q.DATAA
+B[1] => Q.DATAA
+B[2] => Q.DATAA
+B[3] => Q.DATAA
+select => Q.OUTPUTSELECT
+select => Q.OUTPUTSELECT
+select => Q.OUTPUTSELECT
+select => Q.OUTPUTSELECT
+Q[0] <= Q.DB_MAX_OUTPUT_PORT_TYPE
+Q[1] <= Q.DB_MAX_OUTPUT_PORT_TYPE
+Q[2] <= Q.DB_MAX_OUTPUT_PORT_TYPE
+Q[3] <= Q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|piano|select_music:inst11
+A[0] => Mux3.IN0
+A[1] => Mux2.IN0
+A[2] => Mux1.IN0
+A[3] => Mux0.IN0
+B[0] => Mux3.IN1
+B[1] => Mux2.IN1
+B[2] => Mux1.IN1
+B[3] => Mux0.IN1
+C[0] => Mux3.IN2
+C[1] => Mux2.IN2
+C[2] => Mux1.IN2
+C[3] => Mux0.IN2
+D[0] => Mux3.IN3
+D[1] => Mux2.IN3
+D[2] => Mux1.IN3
+D[3] => Mux0.IN3
+key => count[0].CLK
+key => count[1].CLK
+Q[0] <= Mux3.DB_MAX_OUTPUT_PORT_TYPE
+Q[1] <= Mux2.DB_MAX_OUTPUT_PORT_TYPE
+Q[2] <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
+Q[3] <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|piano|debounce:inst14
+clk => clean_key~reg0.CLK
+clk => shift_reg[0].CLK
+clk => shift_reg[1].CLK
+clk => shift_reg[2].CLK
+clk => shift_reg[3].CLK
+noisy_key => shift_reg[0].DATAIN
+clean_key <= clean_key~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|piano|ROM_music:inst1
+Q[0] <= Q[0].DB_MAX_OUTPUT_PORT_TYPE
+Q[1] <= Q[1].DB_MAX_OUTPUT_PORT_TYPE
+Q[2] <= Q[2].DB_MAX_OUTPUT_PORT_TYPE
+Q[3] <= Q[3].DB_MAX_OUTPUT_PORT_TYPE
+A[0] => mem.RADDR
+A[1] => mem.RADDR1
+A[2] => mem.RADDR2
+A[3] => mem.RADDR3
+A[4] => mem.RADDR4
+A[5] => mem.RADDR5
+A[6] => mem.RADDR6
+A[7] => mem.RADDR7
+CLK => ~NO_FANOUT~
+
+
+|piano|FDIV:inst9
+CLK => FULL.CLK
+CLK => Q1[0].CLK
+CLK => Q1[1].CLK
+CLK => Q1[2].CLK
+CLK => Q1[3].CLK
+CLK => Q1[4].CLK
+CLK => Q1[5].CLK
+CLK => Q1[6].CLK
+CLK => Q1[7].CLK
+CLK => Q1[8].CLK
+CLK => Q1[9].CLK
+CLK => Q1[10].CLK
+PM <= FULL.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|piano|CNT138T:inst10
+CLK => CNT[0].CLK
+CLK => CNT[1].CLK
+CLK => CNT[2].CLK
+CLK => CNT[3].CLK
+CLK => CNT[4].CLK
+CLK => CNT[5].CLK
+CLK => CNT[6].CLK
+CLK => CNT[7].CLK
+CNT8[0] <= CNT[0].DB_MAX_OUTPUT_PORT_TYPE
+CNT8[1] <= CNT[1].DB_MAX_OUTPUT_PORT_TYPE
+CNT8[2] <= CNT[2].DB_MAX_OUTPUT_PORT_TYPE
+CNT8[3] <= CNT[3].DB_MAX_OUTPUT_PORT_TYPE
+CNT8[4] <= CNT[4].DB_MAX_OUTPUT_PORT_TYPE
+CNT8[5] <= CNT[5].DB_MAX_OUTPUT_PORT_TYPE
+CNT8[6] <= CNT[6].DB_MAX_OUTPUT_PORT_TYPE
+CNT8[7] <= CNT[7].DB_MAX_OUTPUT_PORT_TYPE
+key => always0.IN1
+
+
+|piano|ROM_music1:inst2
+Q[0] <= Q[0].DB_MAX_OUTPUT_PORT_TYPE
+Q[1] <= Q[1].DB_MAX_OUTPUT_PORT_TYPE
+Q[2] <= Q[2].DB_MAX_OUTPUT_PORT_TYPE
+Q[3] <= Q[3].DB_MAX_OUTPUT_PORT_TYPE
+A[0] => mem.RADDR
+A[1] => mem.RADDR1
+A[2] => mem.RADDR2
+A[3] => mem.RADDR3
+A[4] => mem.RADDR4
+A[5] => mem.RADDR5
+A[6] => mem.RADDR6
+A[7] => mem.RADDR7
+CLK => ~NO_FANOUT~
+
+
+|piano|ROM_music2:inst3
+Q[0] <= Q[0].DB_MAX_OUTPUT_PORT_TYPE
+Q[1] <= Q[1].DB_MAX_OUTPUT_PORT_TYPE
+Q[2] <= Q[2].DB_MAX_OUTPUT_PORT_TYPE
+Q[3] <= Q[3].DB_MAX_OUTPUT_PORT_TYPE
+A[0] => mem.RADDR
+A[1] => mem.RADDR1
+A[2] => mem.RADDR2
+A[3] => mem.RADDR3
+A[4] => mem.RADDR4
+A[5] => mem.RADDR5
+A[6] => mem.RADDR6
+A[7] => mem.RADDR7
+CLK => ~NO_FANOUT~
+
+
+|piano|ROM_music3:inst8
+Q[0] <= Q[0].DB_MAX_OUTPUT_PORT_TYPE
+Q[1] <= Q[1].DB_MAX_OUTPUT_PORT_TYPE
+Q[2] <= Q[2].DB_MAX_OUTPUT_PORT_TYPE
+Q[3] <= Q[3].DB_MAX_OUTPUT_PORT_TYPE
+A[0] => mem.RADDR
+A[1] => mem.RADDR1
+A[2] => mem.RADDR2
+A[3] => mem.RADDR3
+A[4] => mem.RADDR4
+A[5] => mem.RADDR5
+A[6] => mem.RADDR6
+A[7] => mem.RADDR7
+CLK => ~NO_FANOUT~
+
+
+|piano|mat_key:inst13
+clk => key[0].CLK
+clk => key[1].CLK
+clk => key[2].CLK
+clk => key[3].CLK
+clk => key[4].CLK
+clk => key[5].CLK
+clk => key[6].CLK
+clk => key[7].CLK
+clk => row[0]~reg0.CLK
+clk => row[1]~reg0.CLK
+clk => row[2]~reg0.CLK
+clk => row[3]~reg0.CLK
+clk => S[0].CLK
+clk => S[1].CLK
+rst => key[0].PRESET
+rst => key[1].PRESET
+rst => key[2].PRESET
+rst => key[3].PRESET
+rst => key[4].ACLR
+rst => key[5].ACLR
+rst => key[6].ACLR
+rst => key[7].ACLR
+rst => row[0]~reg0.ACLR
+rst => row[1]~reg0.PRESET
+rst => row[2]~reg0.PRESET
+rst => row[3]~reg0.PRESET
+rst => S[0].ACLR
+rst => S[1].ACLR
+row[0] <= row[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+row[1] <= row[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+row[2] <= row[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+row[3] <= row[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+col[0] => key.DATAB
+col[0] => Equal0.IN3
+col[1] => key.DATAB
+col[1] => Equal0.IN2
+col[2] => key.DATAB
+col[2] => Equal0.IN1
+col[3] => key.DATAB
+col[3] => Equal0.IN0
+keyout[0] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+keyout[1] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+keyout[2] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+keyout[3] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+
+
