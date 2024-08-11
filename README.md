@@ -40,6 +40,6 @@ music.mif 中的音符数据可以根据演奏乐曲更改。
 
 ## 3. 模块组合
 ### 3.1 模块连接
-![1.png](./resources/1.png)
+![1.png](./_resources/1.png)
 ### 3.2 引脚分配
-![2.png](./resources/2.png)
+![2.png](./_resources/2.png)
